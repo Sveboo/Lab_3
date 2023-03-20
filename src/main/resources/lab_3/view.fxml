@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab_3.Controller">
+   <children>
+      <TextField fx:id="surname" layoutX="42.0" layoutY="70.0" prefHeight="37.0" prefWidth="181.0" promptText="Иванов" style="-fx-border-color: #A9A9A9;" />
+      <TextField fx:id="name" layoutX="42.0" layoutY="141.0" prefHeight="37.0" prefWidth="181.0" promptText="Иван" style="-fx-border-color: #A9A9A9;" />
+      <DatePicker fx:id="dataOfBirth" layoutX="42.0" layoutY="281.0" prefHeight="37.0" prefWidth="181.0" promptText="01.01.2001" />
+      <Label layoutX="42.0" layoutY="118.0" prefHeight="23.0" prefWidth="181.0" text="Имя" />
+      <Label layoutX="42.0" layoutY="47.0" prefHeight="23.0" prefWidth="181.0" text="Фамилия" />
+      <Label layoutX="42.0" layoutY="189.0" prefHeight="23.0" prefWidth="181.0" text="Отчество" />
+      <TextField fx:id="patronymic" layoutX="42.0" layoutY="212.0" prefHeight="37.0" prefWidth="181.0" promptText="Иванович" style="-fx-border-color: #A9A9A9;" />
+      <Label layoutX="42.0" layoutY="258.0" prefHeight="23.0" prefWidth="181.0" text="Дата рождения" />
+      <Button layoutX="84.0" layoutY="338.0" mnemonicParsing="false" onAction="#printUser" prefHeight="24.0" prefWidth="167.0" text="run" />
+   </children>
+</Pane>
