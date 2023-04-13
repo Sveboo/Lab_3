@@ -60,19 +60,14 @@ public class Controller {
     private String getYears(LocalDate begin){
         LocalDate end = LocalDate.now();
         int years = (int) ChronoUnit.YEARS.between(begin, end);
+        int lastDigit = years % 10;
 
-        switch (years % 10){
-            case 1 ->{
-                return years + " год";
-            }
-
-            case 2, 3, 4 -> {
-                return years + " года";
-            }
-
-            default -> {
-                return years + " лет";
-            }
+        if (lastDigit == 1 && years != 11){
+            return years + " год";
+        } else if (lastDigit > 1 && lastDigit < 5 && (years % 100 < 10 || years % 100 >= 20)) {
+            return years + " года";
+        }else{
+            return years + " лет";
         }
     }
 
